@@ -1,0 +1,7 @@
+{
+  "name": "budgetivityApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
