@@ -1,0 +1,39 @@
+<!--
+  Generated template for the BudgetAllocationModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Budget Allocation</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+      <ion-item>
+          <ion-label>Choose a Category</ion-label>
+          <ion-select [(ngModel)]="category" name="category">
+            <ion-option value="Food">Food</ion-option>
+            <ion-option value="Transportation">Transportation</ion-option>
+            <ion-option value="Health">Health</ion-option>
+            <ion-option value="Personal">Personal</ion-option>
+            <ion-option value="Education">Education</ion-option>
+            <ion-option value="Donations">Donations</ion-option>
+          </ion-select>
+      </ion-item>
+      <ion-item>
+          <ion-label>Enter Percent Allocation:</ion-label>
+          <ion-input type="text" [(ngModel)]="percentAllocation" name="percentAllocation" required="" ></ion-input>
+      </ion-item>
+  </ion-list>
+   
+    <div padding>
+        <button ion-button block color="primary" (click)="saveBudgetAllocation()">Save</button>
+        <button ion-button block color="danger" (click)="cancelBudgetAllocation()">Cancel</button>
+      </div>
+</ion-content>

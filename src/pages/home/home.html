@@ -1,17 +1,46 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="assets/budgetivity_logo.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+
+
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>
+      List of Income
+    </ion-title>
   </ion-navbar>
+  <div>
+    <ion-fab top right bottom class="ion-fab">
+      <button ion-fab mini color="light" top right><ion-icon name="add"></ion-icon></button>
+        <ion-fab-list side="left">
+          <button ion-fab><ion-icon name="logo-usd" (click)="AddMoney()"></ion-icon></button>
+          <button ion-fab><ion-icon name="md-calculator" (click)="BudgetAllocation()"></ion-icon></button>
+        </ion-fab-list>
+      </ion-fab>
+  </div>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-card>
+    <ion-card-content *ngFor="let income of incomes">
+      {{income.amount}}
+        <ion-icon ios="ios-trash" md="md-trash" float-right (click)="deleteIncome(income)" color="danger"></ion-icon>
+        <ion-icon ios="ios-create" md="md-create" float-right (click)="editIncome(income)" color="energy"></ion-icon>
+    </ion-card-content>
+  </ion-card>
+
+
+  <div>
+    <button ion-button color="secondary" roundoutline (click)="viewBudgetAllocation()">Budget Allocations</button>
+  </div>
+
+  
+  
 </ion-content>
+
+
+

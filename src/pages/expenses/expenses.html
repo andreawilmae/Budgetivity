@@ -1,0 +1,168 @@
+<ion-header>
+    <ion-navbar color="primary">
+      <ion-title>
+        Expense Categories
+        <button ion-button icon-only (click)="selectImage()">
+          <ion-icon name="camera"></ion-icon>
+        </button>
+      </ion-title>
+
+    </ion-navbar>
+  </ion-header>
+  
+
+<ion-content padding>
+    <ion-list>
+      <ion-item>
+        <h2><ion-icon name="ios-basket" item-start></ion-icon>Food</h2>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-2>
+              <p>Spent</p>
+            </ion-col>
+            <ion-col col-3>
+              <p>Allocated</p>
+            </ion-col>
+            <ion-col col-4>
+              <p>Remaining</p>
+            </ion-col>
+            <ion-col col-2>
+              <ion-icon name="add-circle" float-right style="zoom:1.5;" color="energy" (click)="addFoodExpense()"></ion-icon>
+            </ion-col>
+            <ion-col col-1>
+                <ion-icon name="md-list" float-right style="zoom:1.3;" color="dark" (click)="viewFoodExpenses()"></ion-icon>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    </ion-item>
+
+    <ion-item>
+        <h2><ion-icon name="ios-shirt" item-start></ion-icon>Clothing</h2>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-2>
+              <p>Spent</p>
+            </ion-col>
+            <ion-col col-3>
+              <p>Allocated</p>
+            </ion-col>
+            <ion-col col-4>
+              <p>Remaining</p>
+            </ion-col>
+            <ion-col col-2>
+              <ion-icon name="add-circle" float-right style="zoom:1.5;" color="energy" (click)="addClothingExpense()"></ion-icon>
+            </ion-col>
+            <ion-col col-1>
+                <ion-icon name="md-list" float-right style="zoom:1.3;" color="dark"></ion-icon>
+            </ion-col>
+            
+          </ion-row>
+        </ion-grid>
+    </ion-item>
+
+
+    <ion-item>
+        <h2><ion-icon name="ios-train" item-start></ion-icon>Transportation</h2>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-2>
+              <p>Spent</p>
+            </ion-col>
+            <ion-col col-3>
+              <p>Allocated</p>
+            </ion-col>
+            <ion-col col-4>
+              <p>Remaining</p>
+            </ion-col>
+            <ion-col col-2>
+              <ion-icon name="add-circle" float-right style="zoom:1.5;" color="energy" (click)="addTransportationExpense()"></ion-icon>
+            </ion-col>
+            <ion-col col-1>
+                <ion-icon name="md-list" float-right style="zoom:1.3;" color="dark"></ion-icon>
+            </ion-col>
+            
+          </ion-row>
+        </ion-grid>
+    </ion-item>
+
+    <ion-item>
+        <h2><ion-icon name="ios-medkit" item-start></ion-icon>Health</h2>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-2>
+              <p>Spent</p>
+            </ion-col>
+            <ion-col col-3>
+              <p>Allocated</p>
+            </ion-col>
+            <ion-col col-4>
+              <p>Remaining</p>
+            </ion-col>
+            <ion-col col-2>
+              <ion-icon name="add-circle" float-right style="zoom:1.5;" color="energy" (click)="addHealthExpense()"></ion-icon>
+            </ion-col>
+            <ion-col col-1>
+                <ion-icon name="md-list" float-right style="zoom:1.3;" color="dark"></ion-icon>
+            </ion-col>
+            
+          </ion-row>
+        </ion-grid>
+    </ion-item>
+
+    <ion-item>
+        <h2><ion-icon name="ios-school" item-start></ion-icon>Education</h2>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-2>
+              <p>Spent</p>
+            </ion-col>
+            <ion-col col-3>
+              <p>Allocated</p>
+            </ion-col>
+            <ion-col col-4>
+              <p>Remaining</p>
+            </ion-col>
+            <ion-col col-2>
+              <ion-icon name="add-circle" float-right style="zoom:1.5;" color="energy" (click)="addEducationExpense()"></ion-icon>
+            </ion-col>
+            <ion-col col-1>
+                <ion-icon name="md-list" float-right style="zoom:1.3;" color="dark"></ion-icon>
+            </ion-col>
+            
+          </ion-row>
+        </ion-grid>
+    </ion-item>
+
+    <ion-item>
+        <h2><ion-icon name="logo-dropbox" item-start></ion-icon>Donations</h2>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-2>
+              <p>Spent</p>
+            </ion-col>
+            <ion-col col-3>
+              <p>Allocated</p>
+            </ion-col>
+            <ion-col col-4>
+              <p>Remaining</p>
+            </ion-col>
+            <ion-col col-2>
+              <ion-icon name="add-circle" float-right style="zoom:1.5;" color="energy" (click)="addDonationExpense()"></ion-icon>
+            </ion-col>
+            <ion-col col-1>
+                <ion-icon name="md-list" float-right style="zoom:1.3;" color="dark"></ion-icon>
+            </ion-col>
+            
+          </ion-row>
+        </ion-grid>
+    </ion-item>   
+  </ion-list>
+    
+    
+    
+  
+  
+
+    
+  
+</ion-content>

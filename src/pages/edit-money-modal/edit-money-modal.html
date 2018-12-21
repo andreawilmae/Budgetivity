@@ -1,0 +1,36 @@
+<!--
+  Generated template for the EditMoneyModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Edit Money</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>Enter New Amount</ion-label>
+      <ion-input type="text" [(ngModel)]="income.amount" name="amount" required="" id="amount"></ion-input>
+    </ion-item>
+  <ion-item>
+      <ion-label>Type</ion-label>
+      <ion-select [(ngModel)]="income.type" name="type" id="type">
+        <ion-option value="allowance">allowance</ion-option>
+        <ion-option value="salary">salary</ion-option>
+      </ion-select>
+  </ion-item>
+  
+  <div padding>
+    <button ion-button block color="primary" (click)="updateIncome()">Update</button>
+    <button ion-button block color="danger" (click)="cancelIncome()">Cancel</button>
+  </div>
+  </ion-list>
+  
+</ion-content>
